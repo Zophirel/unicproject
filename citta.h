@@ -32,4 +32,6 @@ struct City{
     char * c_size[SO_HEIGHT][SO_WIDTH];
 };
 void createCity();
-void createHole();
+//void createHole();
+int * getCouple();
+int rand();

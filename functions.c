@@ -1,6 +1,18 @@
 #include <stdio.h>
 #include "citta.h"
 
+int * getCouple(){
+    int lower = 0, upper = SO_HEIGHT;
+    int num[1];
+    num[0] = (rand() % (upper - lower + 1)) + lower;
+    upper = SO_WIDTH;
+    num[1] = (rand() % (upper - lower + 1)) + lower;
+    for(int i = 0; i < 2; i++){
+        printf("%d", num[i]);
+    }
+    return num;
+}
+
 void createCity(){
     struct City city;
     int i, j; 
@@ -18,4 +30,8 @@ void createCity(){
             }
         }
     }
-}
+    /*for(i = 0; i < SO_HOLES; i++){
+        createHole(rand());
+    }*/
+    rand();
+} 
