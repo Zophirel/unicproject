@@ -10,6 +10,10 @@
 #include <sys/sem.h>
 #include "citta.h"
 
+#ifdef DENSE
+    const int SO_SOURCES = SO_WIDTH * SO_HEIGHT - SO_HOLES;
+    int SO_TAXI = SO_SOURCES / 2;
+#endif
 
 int main(int argc, char * argv[]){
     createCity();

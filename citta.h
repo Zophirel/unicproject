@@ -3,10 +3,8 @@
 #define SO_HEIGHT 10
 #define SO_HOLES 10
 #define SO_TOP_CELLS 40
-const int SO_SOURCES = SO_WIDTH * SO_HEIGHT - SO_HOLES;
 #define SO_CAP_MIN 1
 #define SO_CAP_MAX 1
-int SO_TAXI = SO_SOURCES / 2;
 #define SO_TIMENSEC_MIN 100000000
 #define SO_TIMENSEC_MAX 300000000
 #define SO_TIMEOUT 1
@@ -32,6 +30,5 @@ struct City{
     char * c_size[SO_HEIGHT][SO_WIDTH];
 };
 void createCity();
-//void createHole();
-int * getCouple();
+void getCouple();
 int rand();
