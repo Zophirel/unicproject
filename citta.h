@@ -1,4 +1,5 @@
 #ifdef DENSE
+
 #define SO_WIDTH 20
 #define SO_HEIGHT 10
 #define SO_HOLES 10
@@ -26,9 +27,7 @@
 #define SO_DURATION 20
 #endif
 
-struct City{
-    char * c_size[SO_HEIGHT][SO_WIDTH];
-};
 void createCity();
-void getCouple();
+void genCouples();
+void editCouples(int i, int * r, int * c);
 int rand();
